@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Galaxy Background -->
+    <div class="animated-bg" id="animatedBg">
+      <div class="shooting-star" style="top: 10%; left: 80%; width: 100px"></div>
+      <div class="shooting-star" style="top: 30%; left: 60%; width: 80px; animation-delay: 2s"></div>
+      <div class="shooting-star" style="top: 50%; left: 90%; width: 120px; animation-delay: 4s"></div>
+      <div class="shooting-star" style="top: 70%; left: 40%; width: 90px; animation-delay: 6s"></div>
+
+      <div class="nebula" style="top: 20%; left: 30%; width: 300px; height: 300px"></div>
+      <div class="nebula" style="top: 60%; left: 70%; width: 400px; height: 400px; animation-delay: 5s"></div>
+      <div class="nebula" style="bottom: 10%; left: 10%; width: 350px; height: 350px; animation-delay: 3s"></div>
+
+      <div class="planet" style="top: 10%; right: 10%; width: 100px; height: 100px"></div>
+      <div class="planet" style="bottom: 15%; left: 15%; width: 80px; height: 80px; animation-delay: 30s"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container-fluid">
+        <!-- Brand -->
+        <a class="navbar-brand fw-bold text-light" href="#home">MR</a>
+
+        <!-- Toggle (Mobile) -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Desktop Menu -->
+        <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex">
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item mx-2">
+              <a class="nav-link active text-light" href="#home" data-key="navHome">Home</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-light" href="#about" data-key="navAbout">Tentang Saya</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-light" href="#skills" data-key="navSkills">Keahlian</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-light" href="#projects" data-key="navProjects">Proyek</a>
+            </li>
+            <li class="nav-item mx-2">
+              <a class="nav-link text-light" href="#contact" data-key="navContact">Kontak</a>
+            </li>
+            <li class="nav-item mx-3">
+              <button class="btn btn-outline-light btn-sm" id="langToggle">
+                <span id="langIcon">EN</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Offcanvas Menu (Mobile Only) -->
+        <div class="offcanvas offcanvas-end text-bg-dark d-lg-none" tabindex="-1" id="offcanvasNavbar">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">MR</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link active" href="#home" data-key="navHome">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#about" data-key="navAbout">Tentang Saya</a></li>
+              <li class="nav-item"><a class="nav-link" href="#skills" data-key="navSkills">Keahlian</a></li>
+              <li class="nav-item"><a class="nav-link" href="#projects" data-key="navProjects">Proyek</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact" data-key="navContact">Kontak</a></li>
+              <li class="nav-item mt-3 text-center">
+                <button class="btn btn-outline-light btn-sm" id="langToggleMobile">
+                  <span id="langIconMobile">EN</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="content">
+      <!-- Home Section -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <h1 data-key="heroTitle">Hallo, Saya Muhamad Rivaldi</h1>
+          <p data-key="heroDesc">Selamat datang di My-Porto saya</p>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section id="about" class="section-padding">
+        <div class="container">
+          <div class="glass-card">
+            <h2 class="section-title" data-key="aboutTitle">Tentang Saya</h2>
+            <div class="row align-items-center">
+              <div class="col-md-4 text-center mb-4 mb-md-0">
+                <div class="profile-img-wrapper">
+                  <img src="img/Saya.jpg" alt="Profile" class="profile-img" />
+                </div>
+              </div>
+              <div class="col-md-8">
+                <h3 class="mb-3" style="color: #9d7cdb" data-key="aboutName">Muhamad Rivaldi</h3>
+                <p data-key="aboutDesc1">
+                  Saya adalah seorang fullstack web developer yang passionate dalam menciptakan 
+                  pengalaman digital yang menakjubkan. Dengan pengalaman dalam berbagai teknologi modern, saya selalu berusaha untuk memberikan solusi terbaik.
+                </p>
+                <p data-key="aboutDesc2">Saya percaya bahwa desain yang baik dan kode yang berkualitas adalah kunci untuk menciptakan produk yang luar biasa.</p>
+                <div class="mt-4">
+                  <span class="badge-custom">Fullstack Developer</span>
+                  <span class="badge-custom">UI/UX Enthusiast</span>
+                  <span class="badge-custom">Quality Assurance</span>
+                  <span class="badge-custom">Problem Solver</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section-padding">
+        <div class="container">
+          <h2 class="section-title text-center">Keahlian</h2>
+          <div class="row g-4">
+            <!-- Frontend -->
+            <div class="col-md-4">
+              <div class="glass-card text-center">
+                <h4 class="mb-3">Frontend Development</h4>
+                <div class="skill-images">
+                  <img src="img/JS.webp" alt="JavaScript" />
+                  <img src="img/React.webp" alt="React" />
+                  <img src="img/Next.webp" alt="NextJS" />
+                  <img src="img/Vue.webp" alt="VueJS" />
+                  <img src="img/Vite.webp" alt="Vite" />
+                </div>
+                <p>JavaScript, ReactJS, NextJS, VueJS, Vite</p>
+              </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="col-md-4">
+              <div class="glass-card text-center">
+                <h4 class="mb-3">Backend Development</h4>
+                <div class="skill-images">
+                  <img src="img/Laravel.webp" alt="Laravel" />
+                  <img src="img/PHP.webp" alt="PHP" />
+                  <img src="img/Python.webp" alt="Python" />
+                  <img src="img/Node.webp" alt="Node.js" />
+                  <img src="img/Ci.webp" alt="CI" />
+                </div>
+                <p>Laravel, PHP, Python, Node.Js, codeigniter</p>
+              </div>
+            </div>
+
+            <!-- Design & Tools -->
+            <div class="col-md-4">
+              <div class="glass-card text-center">
+                <h4 class="mb-3">Database</h4>
+                <div class="skill-images">
+                  <img src="img/Mysql.webp" alt="Mysql" />
+                  <img src="img/MongoDb.webp" alt="MongoBD" />
+                  <img src="img/Laragon.jpeg" alt="Laragon" />
+                  <img src="img/Xampp.webp" alt="Xampp" />
+                </div>
+                <p>Mysql, MongoBD, Laragon, Xampp</p>
+              </div>
+            </div>
+
+            <!-- Developmebt Tools -->
+            <div class="col-md-4">
+              <div class="glass-card text-center">
+                <h4 class="mb-3">Developmebt Tools</h4>
+                <div class="skill-images">
+                  <img src="img/Vscode.webp" alt="VsCode" />
+                  <img src="img/AndroidStudio.webp" alt="AndroidStudio" />
+                  <img src="img/Git.webp" alt="Git" />
+                  <img src="img/Github.webp" alt="Github" />
+                </div>
+                <p>VsCode, Android Studio, Git, Github</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section-padding">
+        <div class="container">
+          <h2 class="section-title text-center" data-key="projectsTitle">Proyek Saya</h2>
+          <div class="row g-4">
+            <!-- Project Card 1 -->
+            <div class="col-md-4">
+              <div class="glass-card project-card">
+                <img src="https://via.placeholder.com/400x250/8a2be2/ffffff?text=Project+1" alt="Project 1" class="project-img" />
+                <div class="p-3">
+                  <h4 data-key="project1Title">Website E-Commerce</h4>
+                  <p data-key="project1Desc">Platform belanja online dengan fitur lengkap dan UI modern</p>
+                  <a href="#" class="btn-custom" data-key="btnView">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="col-md-4">
+              <div class="glass-card project-card">
+                <img src="https://via.placeholder.com/400x250/9d7cdb/ffffff?text=Project+2" alt="Project 2" class="project-img" />
+                <div class="p-3">
+                  <h4 data-key="project2Title">Dashboard Analytics</h4>
+                  <p data-key="project2Desc">Dashboard admin dengan visualisasi data yang powerful</p>
+                  <a href="#" class="btn-custom" data-key="btnView">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="col-md-4">
+              <div class="glass-card project-card">
+                <img src="https://via.placeholder.com/400x250/b19cd9/ffffff?text=Project+3" alt="Project 3" class="project-img" />
+                <div class="p-3">
+                  <h4 data-key="project3Title">Mobile App Design</h4>
+                  <p data-key="project3Desc">Desain aplikasi mobile dengan user experience terbaik</p>
+                  <a href="#" class="btn-custom" data-key="btnView">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section-padding">
+        <div class="container">
+          <div class="glass-card text-center">
+            <h2 class="section-title" data-key="contactTitle">Hubungi Saya</h2>
+            <p class="mb-4" data-key="contactDesc">Mari berkolaborasi dan ciptakan sesuatu yang luar biasa!</p>
+            <div class="contact-links">
+              <a href="mailto:your@email.com" class="contact-btn">
+                <span>📧</span>
+                <span>Email</span>
+              </a>
+              <a href="https://github.com" target="_blank" class="contact-btn">
+                <span>🔗</span>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com" target="_blank" class="contact-btn">
+                <span>💼</span>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
